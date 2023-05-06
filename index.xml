@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Practical Networking playing with Hugo</title>
+    <link>https://pnplayground.github.io/</link>
+    <description>Recent content on Practical Networking playing with Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 05 May 2023 16:19:07 -0700</lastBuildDate><atom:link href="https://pnplayground.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Symmetric Encryption</title>
+      <link>https://pnplayground.github.io/posts/symmetric-encryption/</link>
+      <pubDate>Fri, 05 May 2023 16:19:07 -0700</pubDate>
+      
+      <guid>https://pnplayground.github.io/posts/symmetric-encryption/</guid>
+      <description>openssl encryption Encryption Openssl can be used for Symmetric Encryption:
+echo Hello | openssl enc
+Nothing happened because an algorithm wasn’t specified
+List all possible algorithms using -list:
+echo Hello | openssl enc -list
+Encrypting with AES-128:
+echo Hello | openssl enc -aes-128-cbc
+Password requested because Symmetric Encryption requires Secret Key
+Provide Password in Command echo Hello | openssl enc -aes-128-cbc -pass pass:SECRETKEY
+On versions of OpenSSL after 1.0, you get this ominous warning: *** WARNING : deprecated key derivation used.</description>
+    </item>
+    
+    <item>
+      <title>Playing With Rsa</title>
+      <link>https://pnplayground.github.io/posts/playing-with-rsa/</link>
+      <pubDate>Fri, 05 May 2023 16:18:11 -0700</pubDate>
+      
+      <guid>https://pnplayground.github.io/posts/playing-with-rsa/</guid>
+      <description>Generate RSA Keys: openssl genrsa -out rsa1key.pem 2048
+Extract Public Key: openssl rsa -in rsa1key.pem -pubout &amp;gt; rsa1pub.pem openssl pkey -in rsa3key.pem -pubout &amp;gt; rsa1pub.pem
+Create Cleartext Messages: echo &amp;ldquo;Attack at Dawn.&amp;rdquo; &amp;gt; message.txt for msg in {1..100}; do echo &amp;ldquo;Attack at Dawn! $msg&amp;rdquo; &amp;raquo; bigmessage100.txt; done
+Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message.txt.ENC openssl pkeyutl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message.</description>
+    </item>
+    
+    <item>
+      <title>First Post</title>
+      <link>https://pnplayground.github.io/posts/first-post/</link>
+      <pubDate>Fri, 05 May 2023 16:14:26 -0700</pubDate>
+      
+      <guid>https://pnplayground.github.io/posts/first-post/</guid>
+      <description>This is the first post on my test blog I&amp;rsquo;m going to use it to play with Hugo
+Here is an H2 header This is bold text, and italic text, or maybe italic text. I can also crossout, I think, and maybe underline.
+This is inline code using backticks.
+This is triple backtics to create, what I hope becomes a code block with preformatted text allowed More H2 headers Now let&amp;rsquo;s play with block quotes:</description>
+    </item>
+    
+  </channel>
+</rss>
