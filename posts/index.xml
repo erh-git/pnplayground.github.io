@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Posts on Practical Networking playing with Hugo</title>
-    <link>https://pnplayground.github.io/posts/</link>
+    <link>https://blog.0n0ff.com/posts/</link>
     <description>Recent content in Posts on Practical Networking playing with Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 May 2023 16:19:07 -0700</lastBuildDate><atom:link href="https://pnplayground.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 05 May 2023 16:19:07 -0700</lastBuildDate><atom:link href="https://blog.0n0ff.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Symmetric Encryption</title>
-      <link>https://pnplayground.github.io/posts/symmetric-encryption/</link>
+      <link>https://blog.0n0ff.com/posts/symmetric-encryption/</link>
       <pubDate>Fri, 05 May 2023 16:19:07 -0700</pubDate>
       
-      <guid>https://pnplayground.github.io/posts/symmetric-encryption/</guid>
+      <guid>https://blog.0n0ff.com/posts/symmetric-encryption/</guid>
       <description>openssl encryption Encryption Openssl can be used for Symmetric Encryption:
 echo Hello | openssl enc
 Nothing happened because an algorithm wasn’t specified
@@ -27,10 +27,10 @@ On versions of OpenSSL after 1.0, you get this ominous warning: *** WARNING : de
     
     <item>
       <title>Playing With Rsa</title>
-      <link>https://pnplayground.github.io/posts/playing-with-rsa/</link>
+      <link>https://blog.0n0ff.com/posts/playing-with-rsa/</link>
       <pubDate>Fri, 05 May 2023 16:18:11 -0700</pubDate>
       
-      <guid>https://pnplayground.github.io/posts/playing-with-rsa/</guid>
+      <guid>https://blog.0n0ff.com/posts/playing-with-rsa/</guid>
       <description>Generate RSA Keys: openssl genrsa -out rsa1key.pem 2048
 Extract Public Key: openssl rsa -in rsa1key.pem -pubout &amp;gt; rsa1pub.pem openssl pkey -in rsa3key.pem -pubout &amp;gt; rsa1pub.pem
 Create Cleartext Messages: echo &amp;ldquo;Attack at Dawn.&amp;rdquo; &amp;gt; message.txt for msg in {1..100}; do echo &amp;ldquo;Attack at Dawn! $msg&amp;rdquo; &amp;raquo; bigmessage100.txt; done
@@ -39,10 +39,10 @@ Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in m
     
     <item>
       <title>First Post</title>
-      <link>https://pnplayground.github.io/posts/first-post/</link>
+      <link>https://blog.0n0ff.com/posts/first-post/</link>
       <pubDate>Fri, 05 May 2023 16:14:26 -0700</pubDate>
       
-      <guid>https://pnplayground.github.io/posts/first-post/</guid>
+      <guid>https://blog.0n0ff.com/posts/first-post/</guid>
       <description>This is the first post on my test blog I&amp;rsquo;m going to use it to play with Hugo
 Here is an H2 header This is bold text, and italic text, or maybe italic text. I can also crossout, I think, and maybe underline.
 This is inline code using backticks.

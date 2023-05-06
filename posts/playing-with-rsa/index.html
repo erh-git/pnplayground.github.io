@@ -12,15 +12,15 @@ Extract Public Key: openssl rsa -in rsa1key.pem -pubout &gt; rsa1pub.pem openssl
 Create Cleartext Messages: echo &ldquo;Attack at Dawn.&rdquo; &gt; message.txt for msg in {1..100}; do echo &ldquo;Attack at Dawn! $msg&rdquo; &raquo; bigmessage100.txt; done
 Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message.txt.ENC openssl pkeyutl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message.">
 <meta name="author" content="">
-<link rel="canonical" href="https://pnplayground.github.io/posts/playing-with-rsa/">
+<link rel="canonical" href="https://blog.0n0ff.com/posts/playing-with-rsa/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.4879321a85a1040010a43a83d47225cf717d7cb0d8f565bf0bfabfd9db2f9183.css" integrity="sha256-SHkyGoWhBAAQpDqD1HIlz3F9fLDY9WW/C/q/2dsvkYM=" rel="preload stylesheet" as="style">
 <script defer crossorigin="anonymous" src="/assets/js/highlight.f413e19d0714851f6474e7ee9632408e58ac146fbdbe62747134bea2fa3415e0.js" integrity="sha256-9BPhnQcUhR9kdOfuljJAjlisFG&#43;9vmJ0cTS&#43;ovo0FeA="
     onload="hljs.initHighlightingOnLoad();"></script>
-<link rel="icon" href="https://pnplayground.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://pnplayground.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://pnplayground.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://pnplayground.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://pnplayground.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="https://blog.0n0ff.com/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="https://blog.0n0ff.com/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="https://blog.0n0ff.com/favicon-32x32.png">
+<link rel="apple-touch-icon" href="https://blog.0n0ff.com/apple-touch-icon.png">
+<link rel="mask-icon" href="https://blog.0n0ff.com/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
 <noscript>
@@ -65,7 +65,7 @@ Extract Public Key: openssl rsa -in rsa1key.pem -pubout &gt; rsa1pub.pem openssl
 Create Cleartext Messages: echo &ldquo;Attack at Dawn.&rdquo; &gt; message.txt for msg in {1..100}; do echo &ldquo;Attack at Dawn! $msg&rdquo; &raquo; bigmessage100.txt; done
 Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message.txt.ENC openssl pkeyutl -encrypt -inkey rsa1pub.pem -pubin -in message.txt -out message." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pnplayground.github.io/posts/playing-with-rsa/" /><meta property="article:section" content="posts" />
+<meta property="og:url" content="https://blog.0n0ff.com/posts/playing-with-rsa/" /><meta property="article:section" content="posts" />
 <meta property="article:published_time" content="2023-05-05T16:18:11-07:00" />
 <meta property="article:modified_time" content="2023-05-05T16:18:11-07:00" />
 
@@ -86,7 +86,7 @@ Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in m
       "@type": "ListItem",
       "position":  2 ,
       "name": "Playing With Rsa",
-      "item": "https://pnplayground.github.io/posts/playing-with-rsa/"
+      "item": "https://blog.0n0ff.com/posts/playing-with-rsa/"
     }
   ]
 }
@@ -108,14 +108,14 @@ Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in m
   "dateModified": "2023-05-05T16:18:11-07:00",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://pnplayground.github.io/posts/playing-with-rsa/"
+    "@id": "https://blog.0n0ff.com/posts/playing-with-rsa/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "Practical Networking playing with Hugo",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://pnplayground.github.io/favicon.ico"
+      "url": "https://blog.0n0ff.com/favicon.ico"
     }
   }
 }
@@ -137,7 +137,7 @@ Encrypt with Public Key: openssl rsautl -encrypt -inkey rsa1pub.pem -pubin -in m
 <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://pnplayground.github.io/" accesskey="h" title="Practical Networking playing with Hugo (Alt + H)">Practical Networking playing with Hugo</a>
+            <a href="https://blog.0n0ff.com/" accesskey="h" title="Practical Networking playing with Hugo (Alt + H)">Practical Networking playing with Hugo</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -211,7 +211,7 @@ openssl pkeyutl -decrypt -inkey rsa1key.pem -in message.txt.ENC -out message.txt
     </main>
     
 <footer class="footer">
-    <span>&copy; 2023 <a href="https://pnplayground.github.io/">Practical Networking playing with Hugo</a></span>
+    <span>&copy; 2023 <a href="https://blog.0n0ff.com/">Practical Networking playing with Hugo</a></span>
     <span>
         Powered by
         <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
